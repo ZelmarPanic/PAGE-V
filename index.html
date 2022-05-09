@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>EL VACIO</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <h2>Codeando Zelmar</h2>
+        </div>
+
+        <div class="navigation"></div>
+        <input type="checkbox" id="nav-checkbox">
+        <label for="nav-checkbox" class="nav-toggle">
+            <img src="open.png" alt="open menu" class="open">
+            <img src="close.jpg" alt="close menu" class="close">
+        </label>
+
+        <ul class="nav-menu">
+            <li><a hreft="#">Home</a></li>
+            <li><a hreft="#">Acerca de mí</a></li>
+            <li><a hreft="#">Servicios</a></li>
+            <li><a hreft="#">Contacto</a></li>
+        </ul>
+    </header>
+    <!-- <div class="hero">
+        <h1>Zelmar Mohozzo</h1>
+        <h3>Frontend, Desing & CiberSecurity</h3>
+        <a href="Contactame" class="">Contactame</a>
+    </div> -->
+    <!--slider imagen comienzo-->
+    <div class="slider">
+        <div class="slides">
+            <!--radio buttons start-->
+            <input type="radio" name="radio-btn" id="radio1">
+            <input type="radio" name="radio-btn" id="radio2">
+            <input type="radio" name="radio-btn" id="radio3">
+            <input type="radio" name="radio-btn" id="radio4">
+            <!-- radio buttons end -->
+            <!-- slide images start -->
+            <div class="slide fisrt">
+                <img src="/img/1.jpg" alt="">
+            </div>
+            <div class="slide">
+                <img src="/img/2.jpg" alt="">
+            </div>
+            <div class="slide">
+                <img src="/img/3.jpg" alt="">
+            </div>
+            <div class="slide">
+                <img src="/img/wall2.jpg" alt="">
+            </div>
+            <!-- imagen slide fin -->
+            <!-- navegación automatica start -->
+            <div class="navigation-auto">
+                <div class="auto-btn1"></div>
+                <div class="auto-btn2"></div>
+                <div class="auto-btn3"></div>
+                <div class="auto-btn4"></div>
+            </div>
+              <!-- navegación automatica end -->
+        </div>
+        <!-- navegación manueal comienzo -->
+        <div class="navigation-manual">
+            <label for="radio1" class="manual-btn"></label>
+            <label for="radio2" class="manual-btn"></label>
+            <label for="radio3" class="manual-btn"></label>
+            <label for="radio4" class="manual-btn"></label>
+        </div>
+        <!-- navegación manueal fin -->
+    </div>
+    <!-- imagen slide fin -->
+    <div class="content">
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+            industry's
+            standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to
+            make
+            a type specimen book. It has survived not only five centuries, but also the leap into electronic
+            typesetting,
+            remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets
+            containing
+            Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including
+            versions
+            of Lorem Ipsum.
+        </p>
+        <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in
+            some
+            form, by injected humour, or randomised words which don't lo</p>
+        <p>tin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical
+            literature, discovered the undoubtable source. </p>
+        <p>
+            The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections
+            1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact
+            original
+            form, accompanied by English versions from the 1914 translation by H. Rackham.
+        </p>
+    </div>
+    <script>
+        $(document).ready(function () {
+            $(window).bind('scroll', function () {
+                var gap = 50;
+                if ($(window).scrollTop() > gap) {
+                    $('header').addClass('active')
+                } else {
+                    $('header').removeClass('active')
+                }
+            })
+        });
+    </script>
+</body>
+
+</html>
